@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+    <style>
+        body{
+            background-color: slateblue;
+        }
+        h1{
+            color:violet;
+        }
+        h2{
+            color: pink;
+        }
+
+        h3{
+            color: coral;
+        }
+        p{
+            color: yellow;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;"><em>Imagem Dinâmica</em></h1>
+    <h3 style="text-align: center"><strong>Estou testando diversas coisas nestas mesma página sobre midias.</strong></h3>
+    <hr color="black">
+    <p>Tente está imagem de diversos tamanhos em seu navegador!</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1000px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto maior">
+    </picture>
+    <h2 style="text-align: center;"><u>Audio</u></h2>
+    <p style="text-align: center;"> <strong>Desfrute desta perfeição!</strong></p>
+    <hr color="gray">
+    <p>They're taking the hobbits to Isengard!</p>
+    <audio preload="metadata" controls>
+        <source src="midia/They're taking the hobbits to Isengard!.mp3" type="audio/mpeg">
+    </audio>
+    <hr color=purple>
+    <p>Seesaw - Suga</p>
+    <audio preload="metadata" controls>
+        <source src="midia/seesaw-suga.mp3" type="audio/mpeg">
+    </audio>
+    <hr color="magen">
+    <p>Jaymes Young - Moondust</p>
+    <audio preload="metadata" controls>
+        <source src="midia/jaymesyoung-moondust.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
